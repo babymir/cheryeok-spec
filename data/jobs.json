@@ -1,0 +1,110 @@
+{
+ "updated": "2026-09-26",
+ "note": "공고 원문·보도에서 직접 확인한 내용만 적었다. validMonths 가 null 이면 공고에서 확인하지 못한 것이다.",
+ "jobs": [
+  {
+   "id": "daegu-guard-2026",
+   "org": "대구광역시",
+   "role": "청원경찰",
+   "category": "청원경찰",
+   "maxGrade": 2,
+   "gradeText": "종합 2등급 이상",
+   "validMonths": 12,
+   "validBasis": "최종시험(면접)일 기준 1년 이내 발급",
+   "use": "체력검정 대체(자격)",
+   "period": "2026-01 공고, 2/11~13 접수",
+   "source": "https://www.newspim.com/news/view/20260120000416"
+  },
+  {
+   "id": "gyeonggi-guard-2026h2",
+   "org": "경기도",
+   "role": "청원경찰 (2026 하반기)",
+   "category": "청원경찰",
+   "maxGrade": 2,
+   "gradeText": "연령별 인증등급 2등급 이상",
+   "validMonths": 12,
+   "validBasis": "서류 제출 마감일 기준 1년 전 기록까지",
+   "use": "서류전형 합격기준",
+   "period": "2026 하반기 공고 예정(9~10월)",
+   "source": "https://www.gg.go.kr/bbs/boardView.do?bsIdx=849&bIdx=224105663&menuId=1534028"
+  },
+  {
+   "id": "yeongjong-env-2026",
+   "org": "인천 영종구",
+   "role": "환경공무관",
+   "category": "환경공무관·미화",
+   "maxGrade": 2,
+   "gradeText": "2등급 이상 (1등급 40점, 2등급 30점)",
+   "validMonths": null,
+   "validBasis": "공고 원문 확인 필요",
+   "use": "지원자격 + 등급별 배점",
+   "period": "2026-11-09 ~ 11-19 접수 예정",
+   "source": "https://www.m-i.kr/news/articleView.html?idxno=1412336"
+  },
+  {
+   "id": "korad-env-2026",
+   "org": "한국원자력환경공단",
+   "role": "공무직 환경미화",
+   "category": "환경공무관·미화",
+   "maxGrade": 3,
+   "gradeText": "1~3등급 (4~6등급 해당없음)",
+   "validMonths": 6,
+   "validBasis": "공고 마감일로부터 6개월 이내 발급",
+   "use": "서류 가점 5점",
+   "period": "2026 정기채용",
+   "source": "https://teach.korea.ac.kr/bbs/cdc/526/181612/download.do"
+  },
+  {
+   "id": "gwangju-donggu-env-2026",
+   "org": "광주 동구",
+   "role": "환경미화원",
+   "category": "환경공무관·미화",
+   "maxGrade": 3,
+   "gradeText": "인증 등급 3등급 이상",
+   "validMonths": null,
+   "validBasis": "공고 원문 확인 필요",
+   "use": "체력검정 대체(응시자격)",
+   "period": "2026-02 보도",
+   "source": "https://www.khan.co.kr/article/202602101125001"
+  },
+  {
+   "id": "seoul-gongmu-2026-1",
+   "org": "서울특별시",
+   "role": "공무직 (시설청소원·시설경비원 등)",
+   "category": "공무직",
+   "maxGrade": 3,
+   "gradeText": "3등급 이상 우대",
+   "validMonths": 6,
+   "validBasis": "원서접수 마감일 기준 6개월 이내 시행분",
+   "use": "우대요건",
+   "period": "2026년 제1차 (2025-10 공고)",
+   "source": "https://seoulgongmu.recruiter.co.kr/mrs2/attachFile/downloadFile?fileUid=b62d5b1a-9bee-4c31-816b-df733d28ca22.pdf"
+  },
+  {
+   "id": "jejuair-crew-2026h2",
+   "org": "제주항공",
+   "role": "객실승무원",
+   "category": "항공 승무원",
+   "maxGrade": 3,
+   "gradeText": "3등급 이상",
+   "validMonths": null,
+   "validBasis": "공고 원문 확인 필요",
+   "use": "필수 제출",
+   "period": "2026 하반기 (8월 공고)",
+   "source": "https://www.newspim.com/news/view/20260806000756"
+  },
+  {
+   "id": "kac-clean-2026",
+   "org": "KAC공항서비스",
+   "role": "미화직",
+   "category": "환경공무관·미화",
+   "maxGrade": 4,
+   "gradeText": "1~4등급",
+   "validMonths": 12,
+   "validBasis": "공고 마감일로부터 1년 이내",
+   "use": "필수 자격",
+   "period": "2026 상반기",
+   "source": "https://job.hallym.ac.kr/bbs/job/721/228214/download.do"
+  }
+ ]
+}

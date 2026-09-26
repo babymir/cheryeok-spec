@@ -1,0 +1,170 @@
+/* 체력스펙 — 공공서비스 느낌의 담백한 화면. 색은 아래 변수에서만 바꾼다. */
+:root {
+  --ink: #1a2230;
+  --ink-soft: #4a5566;
+  --line: #dde2ea;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --accent: #1f5fbf;
+  --accent-soft: #e8f0fc;
+  --green: #1b7f4b;
+  --green-soft: #e4f4ea;
+  --amber: #9a6200;
+  --amber-soft: #fdf2dc;
+  --red: #b3261e;
+  --red-soft: #fbe7e5;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 16px;
+  word-break: keep-all;
+}
+a { color: var(--accent); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+
+/* 머리 */
+.site-header { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
+.brand { font-weight: 800; font-size: 20px; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
+.brand-mark { color: var(--accent); }
+.tabs { display: flex; gap: 4px; }
+.tab {
+  border: 0; background: none; font: inherit; font-size: 15px; color: var(--ink-soft);
+  padding: 8px 10px; border-radius: 8px; cursor: pointer;
+}
+.tab.is-active { color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+.tab-panel { display: none; padding-bottom: 40px; }
+.tab-panel.is-active { display: block; }
+
+/* 소개 */
+.intro { padding: 28px 0 8px; }
+.intro h1 { font-size: 26px; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; }
+.intro p { margin: 0; color: var(--ink-soft); }
+
+/* 단계 카드 */
+.step { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin-top: 16px; }
+.step h2 { font-size: 19px; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.num {
+  display: inline-flex; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: 14px; align-items: center; justify-content: center; flex: none;
+}
+.sub { font-size: 16px; margin: 22px 0 10px; }
+.hint { color: var(--ink-soft); font-size: 14px; margin: 10px 0 0; }
+.note { background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; font-size: 15px; }
+.error { background: var(--red-soft); color: var(--red); border-radius: 8px; padding: 10px 12px; }
+.link-btn { border: 0; background: none; color: var(--accent); font: inherit; font-size: 14px; text-decoration: underline; cursor: pointer; padding: 0 4px; }
+
+/* 공고 카드 */
+.job-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.job-card {
+  position: relative; display: flex; flex-direction: column; gap: 2px;
+  border: 1px solid var(--line); border-radius: 8px; padding: 12px; cursor: pointer; background: #fff;
+}
+.job-card input { position: absolute; opacity: 0; }
+.job-card:has(input:checked) { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.job-card:has(input:focus-visible) { outline: 2px solid var(--accent); }
+.job-org { font-size: 13px; color: var(--ink-soft); }
+.job-role { font-weight: 700; }
+.job-grade { font-size: 14px; color: var(--accent); font-weight: 600; }
+.job-valid { font-size: 13px; color: var(--ink-soft); }
+.job-card.custom { border-style: dashed; }
+
+/* 입력 */
+.field-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-top: 14px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--ink-soft); }
+.field em { font-style: normal; color: #8a94a6; }
+.field small { color: #8a94a6; font-size: 12px; }
+.field.narrow { max-width: 220px; }
+input, select {
+  font: inherit; font-size: 16px; color: var(--ink); padding: 9px 10px;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff; width: 100%;
+}
+input:focus, select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.group-label { font-weight: 700; margin: 18px 0 0; }
+.primary {
+  margin-top: 18px; border: 0; background: var(--accent); color: #fff; font: inherit; font-weight: 700;
+  padding: 12px 22px; border-radius: 8px; cursor: pointer; width: 100%; max-width: 320px;
+}
+.primary:hover { filter: brightness(1.08); }
+
+/* 결과 */
+.result-head { border-radius: var(--radius); padding: 16px 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+.result-head.pass { background: var(--green-soft); }
+.result-head.fail { background: var(--amber-soft); }
+.big-grade { font-size: 22px; }
+.big-grade b { font-size: 34px; letter-spacing: -0.02em; }
+.pass .big-grade b { color: var(--green); }
+.fail .big-grade b { color: var(--amber); }
+.verdict { font-weight: 600; }
+.gap-list { padding-left: 20px; margin: 12px 0; }
+.gap-list li { margin: 4px 0; }
+
+.table-scroll { overflow-x: auto; margin-top: 14px; }
+.grid { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 460px; }
+.grid th, .grid td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.grid th { font-size: 13px; color: var(--ink-soft); font-weight: 600; background: #fafbfc; }
+.grid td small { display: block; color: #8a94a6; font-size: 12px; }
+.tag { display: inline-block; font-size: 13px; padding: 2px 8px; border-radius: 99px; font-weight: 600; white-space: nowrap; }
+.tag.green { background: var(--green-soft); color: var(--green); }
+.tag.amber { background: var(--amber-soft); color: var(--amber); }
+.tag.red { background: var(--red-soft); color: var(--red); }
+.tag.gray { background: #eef0f3; color: var(--ink-soft); }
+
+/* 영상 */
+.video-group h3 { font-size: 15px; margin: 16px 0 8px; }
+.video-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.video-card {
+  display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; padding-bottom: 8px;
+}
+.video-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e9edf2; }
+.video-card span { padding: 0 10px; font-weight: 600; font-size: 14px; }
+.video-card small { padding: 0 10px; color: var(--ink-soft); font-size: 12px; }
+
+/* 일정 */
+.plan-list { padding-left: 20px; margin: 0; }
+.plan-list li { margin: 4px 0; }
+
+/* 센터 */
+.center-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-top: 14px; }
+.center-card { border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 2px; font-size: 14px; }
+.center-card b { font-size: 15px; }
+.center-card small { color: var(--ink-soft); }
+
+/* 채용 담당자 */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-top: 14px; }
+.kpi { border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; }
+.kpi small { color: var(--ink-soft); }
+.kpi b { font-size: 26px; letter-spacing: -0.02em; }
+.kpi span { font-size: 13px; color: var(--ink-soft); }
+.grid.bars { min-width: 0; }
+.bar { position: relative; background: #eef1f5; border-radius: 6px; height: 28px; overflow: hidden; min-width: 120px; }
+.bar i { position: absolute; left: 0; top: 0; bottom: 0; background: #b9cff0; }
+.bar span { position: relative; padding: 0 8px; line-height: 28px; font-size: 14px; font-weight: 600; }
+.grid .bar small { display: inline; font-weight: 400; color: var(--ink-soft); font-size: 12px; }
+.bar.thin { opacity: 0.5; }
+.reason-list { padding-left: 20px; margin: 6px 0 14px; }
+.plain { padding-left: 20px; }
+.plain li { margin: 6px 0; }
+
+/* 바닥 */
+.site-footer { border-top: 1px solid var(--line); background: var(--card); color: var(--ink-soft); font-size: 13px; padding: 18px 0 28px; }
+.site-footer p { margin: 4px 0; }
+
+@media (max-width: 560px) {
+  .site-header { position: static; }
+  .site-header .wrap { height: auto; flex-direction: column; align-items: flex-start; padding-top: 10px; padding-bottom: 8px; gap: 6px; }
+  .tab { padding: 6px 8px; font-size: 14px; }
+  .intro h1 { font-size: 22px; }
+  .step { padding: 16px; }
+  .field-row { grid-template-columns: 1fr 1fr; }
+  .big-grade b { font-size: 28px; }
+}

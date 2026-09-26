@@ -1,0 +1,6 @@
+.env
+__pycache__/
+raw/
+data_work/
+collect.log
+.DS_Store

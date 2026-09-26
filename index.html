@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>체력스펙 — 채용 체력인증 준비</title>
+  <meta name="description" content="국민체력100 인증서를 요구하는 채용에 지원하기 전, 예상 등급과 부족한 항목, 측정 일정을 미리 계산합니다.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="brand-mark">체력</span>스펙</a>
+      <nav class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="applicant" role="tab">지원자</button>
+        <button class="tab" data-tab="employer" role="tab">채용 담당자</button>
+        <button class="tab" data-tab="about" role="tab">데이터 출처</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- 지원자 -->
+    <section id="tab-applicant" class="tab-panel is-active">
+      <div class="intro">
+        <h1>체력인증서, 채용 서류가 됐습니다</h1>
+        <p>청원경찰·환경공무관·공무직·승무원 채용에서 국민체력100 인증등급을 요구합니다.
+          센터에 가기 전에 <b>예상 등급</b>, <b>모자란 항목</b>, <b>마감일에 맞춘 측정 일정</b>을 확인하세요.</p>
+      </div>
+
+      <div class="step" id="step-job">
+        <h2><span class="num">1</span>어떤 채용을 준비하나요?</h2>
+        <div id="job-list" class="job-list"></div>
+        <div class="field-row">
+          <label class="field">
+            <span>서류 마감일(또는 공고의 기준일)</span>
+            <input type="date" id="deadline">
+          </label>
+          <label class="field">
+            <span>요구 등급</span>
+            <select id="target-grade">
+              <option value="1">1등급</option>
+              <option value="2">2등급 이상</option>
+              <option value="3" selected>3등급 이상</option>
+              <option value="4">4등급 이상</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>인증서 유효기간</span>
+            <select id="valid-months">
+              <option value="">모름</option>
+              <option value="3">3개월</option>
+              <option value="6">6개월</option>
+              <option value="12" selected>1년</option>
+            </select>
+          </label>
+        </div>
+        <p class="hint" id="job-hint"></p>
+      </div>
+
+      <div class="step" id="step-record">
+        <h2><span class="num">2</span>내 기록을 넣어 보세요</h2>
+        <p class="hint">집이나 헬스장에서 재 본 값이면 충분합니다. 모르는 항목은 비워 두면 기준값만 보여 줍니다.
+          <button type="button" class="link-btn" id="fill-sample">예시 값 넣기</button></p>
+        <form id="record-form" autocomplete="off">
+          <div class="field-row">
+            <label class="field"><span>성별</span>
+              <select name="sex"><option value="M">남</option><option value="F">여</option></select></label>
+            <label class="field"><span>만 나이</span><input name="age" type="number" min="19" max="100" inputmode="numeric" required></label>
+            <label class="field"><span>키 (cm)</span><input name="height" type="number" step="0.1" inputmode="decimal"></label>
+            <label class="field"><span>몸무게 (kg)</span><input name="weight" type="number" step="0.1" inputmode="decimal"></label>
+            <label class="field"><span>체지방률 (%) <em>선택</em></span><input name="bodyFat" type="number" step="0.1" inputmode="decimal"></label>
+          </div>
+          <div id="record-fields"></div>
+          <button type="submit" class="primary">예상 등급 계산</button>
+        </form>
+      </div>
+
+      <div class="step" id="step-result" hidden>
+        <h2><span class="num">3</span>결과</h2>
+        <div id="result"></div>
+      </div>
+
+      <div class="step" id="step-plan" hidden>
+        <h2><span class="num">4</span>마감일에서 거꾸로 짠 일정</h2>
+        <div id="plan"></div>
+      </div>
+
+      <div class="step" id="step-center">
+        <h2><span class="num">5</span>가까운 체력인증센터</h2>
+        <label class="field narrow"><span>지역</span><select id="center-region"></select></label>
+        <div id="center-list" class="center-list"></div>
+      </div>
+    </section>
+
+    <!-- 채용 담당자 -->
+    <section id="tab-employer" class="tab-panel">
+      <div class="intro">
+        <h1>요구 등급, 몇 등급으로 정할까요?</h1>
+        <p>등급 개편(2025.6) 이후 실제 측정 기록으로 연령·성별 통과율을 계산했습니다.
+          요구 등급을 정하기 전에 어느 지원자층이 걸러지는지 확인하세요.</p>
+      </div>
+      <div class="step">
+        <label class="field narrow"><span>요구 등급</span>
+          <select id="emp-grade">
+            <option value="1">1등급</option>
+            <option value="2">2등급 이상</option>
+            <option value="3" selected>3등급 이상</option>
+            <option value="4">4등급 이상</option>
+          </select></label>
+        <div id="emp-summary"></div>
+        <div id="emp-table" class="table-scroll"></div>
+        <div id="emp-reasons"></div>
+      </div>
+    </section>
+
+    <!-- 데이터 출처 -->
+    <section id="tab-about" class="tab-panel">
+      <div class="intro">
+        <h1>데이터와 계산 근거</h1>
+      </div>
+      <div class="step" id="about"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>이 서비스의 계산은 참고용입니다. 공식 등급은 국민체력100 체력인증센터 측정 결과로만 정해집니다.</p>
+      <p>데이터: 서울올림픽기념국민체육진흥공단 공공데이터(공공데이터포털) · 기준: 문화체육관광부 고시 제2025-0027호</p>
+    </div>
+  </footer>
+
+  <script src="js/dom.js"></script>
+  <script src="js/grade.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/fields.js"></script>
+  <script src="js/employer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

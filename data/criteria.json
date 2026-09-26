@@ -1,0 +1,1089 @@
+{
+ "source": "https://nfa.kspo.or.kr/reserve/0/selectMeasureGradeItemListByAgeSe.kspo",
+ "rule": "문화체육관광부 고시 제2025-0027호 제6조 (2025-06-02 시행)",
+ "items": {
+  "shuttle20": {
+   "label": "20m 왕복 오래달리기",
+   "unit": "회",
+   "direction": "up"
+  },
+  "vo2max": {
+   "label": "트레드밀/스텝검사(VO2max)",
+   "unit": "ml/kg/min",
+   "direction": "up"
+  },
+  "relGrip": {
+   "label": "상대악력",
+   "unit": "%",
+   "direction": "up"
+  },
+  "crossSitup": {
+   "label": "교차윗몸 일으키기",
+   "unit": "회",
+   "direction": "up"
+  },
+  "sitReach": {
+   "label": "앉아 윗몸 앞으로 굽히기",
+   "unit": "cm",
+   "direction": "up"
+  },
+  "run10x4": {
+   "label": "10미터 왕복 달리기",
+   "unit": "초",
+   "direction": "down"
+  },
+  "reaction": {
+   "label": "반응시간",
+   "unit": "초",
+   "direction": "down"
+  },
+  "longJump": {
+   "label": "제자리 멀리뛰기",
+   "unit": "cm",
+   "direction": "up"
+  },
+  "airTime": {
+   "label": "체공시간",
+   "unit": "초",
+   "direction": "up"
+  },
+  "step2min": {
+   "label": "2분 제자리 걷기",
+   "unit": "회",
+   "direction": "up"
+  },
+  "walk6min": {
+   "label": "6분 걷기",
+   "unit": "m",
+   "direction": "up"
+  },
+  "chairStand": {
+   "label": "의자에 앉았다 일어서기",
+   "unit": "회",
+   "direction": "up"
+  },
+  "tug3m": {
+   "label": "의자에 앉아 3m 표적 돌아오기",
+   "unit": "초",
+   "direction": "down"
+  },
+  "fig8": {
+   "label": "8자보행",
+   "unit": "초",
+   "direction": "down"
+  },
+  "absGrip": {
+   "label": "절대악력",
+   "unit": "kg",
+   "direction": "up"
+  }
+ },
+ "adult": {
+  "1": {
+   "M": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 62.0,
+      "vo2max": 47.6,
+      "relGrip": 62.6,
+      "crossSitup": 55.0,
+      "sitReach": 16.1,
+      "run10x4": 9.9,
+      "reaction": 0.301,
+      "longJump": 229.0,
+      "airTime": 0.605
+     },
+     "25~29": {
+      "shuttle20": 54.0,
+      "vo2max": 44.8,
+      "relGrip": 62.4,
+      "crossSitup": 51.0,
+      "sitReach": 14.9,
+      "run10x4": 10.3,
+      "reaction": 0.302,
+      "longJump": 223.0,
+      "airTime": 0.591
+     },
+     "30~34": {
+      "shuttle20": 49.0,
+      "vo2max": 42.9,
+      "relGrip": 62.6,
+      "crossSitup": 47.0,
+      "sitReach": 14.2,
+      "run10x4": 10.6,
+      "reaction": 0.304,
+      "longJump": 219.0,
+      "airTime": 0.583
+     },
+     "35~39": {
+      "shuttle20": 45.0,
+      "vo2max": 41.8,
+      "relGrip": 62.1,
+      "crossSitup": 45.0,
+      "sitReach": 14.0,
+      "run10x4": 10.9,
+      "reaction": 0.311,
+      "longJump": 214.0,
+      "airTime": 0.581
+     },
+     "40~44": {
+      "shuttle20": 42.0,
+      "vo2max": 40.9,
+      "relGrip": 62.8,
+      "crossSitup": 44.0,
+      "sitReach": 14.2,
+      "run10x4": 11.0,
+      "reaction": 0.32,
+      "longJump": 209.0,
+      "airTime": 0.547
+     },
+     "45~49": {
+      "shuttle20": 40.0,
+      "vo2max": 40.1,
+      "relGrip": 62.0,
+      "crossSitup": 41.0,
+      "sitReach": 13.6,
+      "run10x4": 11.3,
+      "reaction": 0.331,
+      "longJump": 202.0,
+      "airTime": 0.524
+     },
+     "50~54": {
+      "shuttle20": 35.0,
+      "vo2max": 38.8,
+      "relGrip": 60.5,
+      "crossSitup": 38.0,
+      "sitReach": 13.9,
+      "run10x4": 11.8,
+      "reaction": 0.337,
+      "longJump": 192.0,
+      "airTime": 0.527
+     },
+     "55~59": {
+      "shuttle20": 31.0,
+      "vo2max": 37.7,
+      "relGrip": 59.4,
+      "crossSitup": 35.0,
+      "sitReach": 13.3,
+      "run10x4": 12.3,
+      "reaction": 0.348,
+      "longJump": 183.0,
+      "airTime": 0.508
+     },
+     "60~64": {
+      "shuttle20": 26.0,
+      "vo2max": 36.3,
+      "relGrip": 56.8,
+      "crossSitup": 31.0,
+      "sitReach": 11.8,
+      "run10x4": 13.1,
+      "reaction": 0.351,
+      "longJump": 170.0,
+      "airTime": 0.474
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 30.0,
+      "vo2max": 36.8,
+      "relGrip": 46.8,
+      "crossSitup": 36.0,
+      "sitReach": 19.7,
+      "run10x4": 12.3,
+      "reaction": 0.332,
+      "longJump": 162.0,
+      "airTime": 0.479
+     },
+     "25~29": {
+      "shuttle20": 28.0,
+      "vo2max": 36.0,
+      "relGrip": 47.0,
+      "crossSitup": 33.0,
+      "sitReach": 18.5,
+      "run10x4": 12.7,
+      "reaction": 0.343,
+      "longJump": 156.0,
+      "airTime": 0.466
+     },
+     "30~34": {
+      "shuttle20": 26.0,
+      "vo2max": 34.8,
+      "relGrip": 49.6,
+      "crossSitup": 31.0,
+      "sitReach": 18.2,
+      "run10x4": 12.9,
+      "reaction": 0.347,
+      "longJump": 154.0,
+      "airTime": 0.464
+     },
+     "35~39": {
+      "shuttle20": 25.0,
+      "vo2max": 34.2,
+      "relGrip": 47.5,
+      "crossSitup": 31.0,
+      "sitReach": 18.9,
+      "run10x4": 13.0,
+      "reaction": 0.348,
+      "longJump": 155.0,
+      "airTime": 0.453
+     },
+     "40~44": {
+      "shuttle20": 24.0,
+      "vo2max": 33.8,
+      "relGrip": 47.1,
+      "crossSitup": 30.0,
+      "sitReach": 18.8,
+      "run10x4": 13.1,
+      "reaction": 0.345,
+      "longJump": 153.0,
+      "airTime": 0.442
+     },
+     "45~49": {
+      "shuttle20": 23.0,
+      "vo2max": 33.0,
+      "relGrip": 46.2,
+      "crossSitup": 28.0,
+      "sitReach": 18.9,
+      "run10x4": 13.4,
+      "reaction": 0.35,
+      "longJump": 148.0,
+      "airTime": 0.431
+     },
+     "50~54": {
+      "shuttle20": 21.0,
+      "vo2max": 32.3,
+      "relGrip": 44.7,
+      "crossSitup": 24.0,
+      "sitReach": 19.5,
+      "run10x4": 13.8,
+      "reaction": 0.354,
+      "longJump": 138.0,
+      "airTime": 0.407
+     },
+     "55~59": {
+      "shuttle20": 18.0,
+      "vo2max": 31.3,
+      "relGrip": 43.2,
+      "crossSitup": 20.0,
+      "sitReach": 19.5,
+      "run10x4": 14.5,
+      "reaction": 0.369,
+      "longJump": 129.0,
+      "airTime": 0.402
+     },
+     "60~64": {
+      "shuttle20": 15.0,
+      "vo2max": 30.2,
+      "relGrip": 41.9,
+      "crossSitup": 17.0,
+      "sitReach": 19.6,
+      "run10x4": 15.3,
+      "reaction": 0.387,
+      "longJump": 120.0,
+      "airTime": 0.393
+     }
+    }
+   }
+  },
+  "2": {
+   "M": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 52.0,
+      "vo2max": 44.8,
+      "relGrip": 57.2,
+      "crossSitup": 48.0,
+      "sitReach": 11.1,
+      "run10x4": 10.9,
+      "reaction": 0.33,
+      "longJump": 213.0,
+      "airTime": 0.568
+     },
+     "25~29": {
+      "shuttle20": 44.0,
+      "vo2max": 42.2,
+      "relGrip": 57.0,
+      "crossSitup": 45.0,
+      "sitReach": 10.1,
+      "run10x4": 11.2,
+      "reaction": 0.335,
+      "longJump": 208.0,
+      "airTime": 0.559
+     },
+     "30~34": {
+      "shuttle20": 40.0,
+      "vo2max": 40.6,
+      "relGrip": 57.2,
+      "crossSitup": 41.0,
+      "sitReach": 9.4,
+      "run10x4": 11.6,
+      "reaction": 0.337,
+      "longJump": 204.0,
+      "airTime": 0.548
+     },
+     "35~39": {
+      "shuttle20": 37.0,
+      "vo2max": 39.5,
+      "relGrip": 56.6,
+      "crossSitup": 39.0,
+      "sitReach": 9.3,
+      "run10x4": 11.9,
+      "reaction": 0.339,
+      "longJump": 199.0,
+      "airTime": 0.551
+     },
+     "40~44": {
+      "shuttle20": 35.0,
+      "vo2max": 38.8,
+      "relGrip": 57.2,
+      "crossSitup": 38.0,
+      "sitReach": 9.5,
+      "run10x4": 12.1,
+      "reaction": 0.346,
+      "longJump": 195.0,
+      "airTime": 0.521
+     },
+     "45~49": {
+      "shuttle20": 32.0,
+      "vo2max": 38.1,
+      "relGrip": 56.7,
+      "crossSitup": 36.0,
+      "sitReach": 9.1,
+      "run10x4": 12.5,
+      "reaction": 0.366,
+      "longJump": 188.0,
+      "airTime": 0.497
+     },
+     "50~54": {
+      "shuttle20": 28.0,
+      "vo2max": 36.9,
+      "relGrip": 55.3,
+      "crossSitup": 32.0,
+      "sitReach": 9.3,
+      "run10x4": 13.0,
+      "reaction": 0.371,
+      "longJump": 177.0,
+      "airTime": 0.486
+     },
+     "55~59": {
+      "shuttle20": 25.0,
+      "vo2max": 35.9,
+      "relGrip": 54.2,
+      "crossSitup": 29.0,
+      "sitReach": 8.6,
+      "run10x4": 13.7,
+      "reaction": 0.383,
+      "longJump": 168.0,
+      "airTime": 0.475
+     },
+     "60~64": {
+      "shuttle20": 20.0,
+      "vo2max": 34.8,
+      "relGrip": 51.7,
+      "crossSitup": 25.0,
+      "sitReach": 7.1,
+      "run10x4": 14.6,
+      "reaction": 0.402,
+      "longJump": 154.0,
+      "airTime": 0.443
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 25.0,
+      "vo2max": 34.8,
+      "relGrip": 42.4,
+      "crossSitup": 30.0,
+      "sitReach": 14.9,
+      "run10x4": 13.2,
+      "reaction": 0.374,
+      "longJump": 149.0,
+      "airTime": 0.447
+     },
+     "25~29": {
+      "shuttle20": 23.0,
+      "vo2max": 34.1,
+      "relGrip": 42.6,
+      "crossSitup": 27.0,
+      "sitReach": 13.8,
+      "run10x4": 13.6,
+      "reaction": 0.383,
+      "longJump": 144.0,
+      "airTime": 0.442
+     },
+     "30~34": {
+      "shuttle20": 21.0,
+      "vo2max": 32.9,
+      "relGrip": 45.2,
+      "crossSitup": 25.0,
+      "sitReach": 13.8,
+      "run10x4": 13.9,
+      "reaction": 0.381,
+      "longJump": 142.0,
+      "airTime": 0.437
+     },
+     "35~39": {
+      "shuttle20": 20.0,
+      "vo2max": 32.3,
+      "relGrip": 43.1,
+      "crossSitup": 25.0,
+      "sitReach": 14.5,
+      "run10x4": 13.9,
+      "reaction": 0.388,
+      "longJump": 144.0,
+      "airTime": 0.425
+     },
+     "40~44": {
+      "shuttle20": 20.0,
+      "vo2max": 32.0,
+      "relGrip": 42.8,
+      "crossSitup": 25.0,
+      "sitReach": 14.6,
+      "run10x4": 14.0,
+      "reaction": 0.382,
+      "longJump": 142.0,
+      "airTime": 0.417
+     },
+     "45~49": {
+      "shuttle20": 18.0,
+      "vo2max": 31.4,
+      "relGrip": 41.9,
+      "crossSitup": 22.0,
+      "sitReach": 14.8,
+      "run10x4": 14.4,
+      "reaction": 0.392,
+      "longJump": 136.0,
+      "airTime": 0.404
+     },
+     "50~54": {
+      "shuttle20": 16.0,
+      "vo2max": 30.7,
+      "relGrip": 40.6,
+      "crossSitup": 19.0,
+      "sitReach": 15.6,
+      "run10x4": 14.9,
+      "reaction": 0.395,
+      "longJump": 126.0,
+      "airTime": 0.381
+     },
+     "55~59": {
+      "shuttle20": 14.0,
+      "vo2max": 29.8,
+      "relGrip": 39.2,
+      "crossSitup": 15.0,
+      "sitReach": 15.7,
+      "run10x4": 15.8,
+      "reaction": 0.416,
+      "longJump": 117.0,
+      "airTime": 0.374
+     },
+     "60~64": {
+      "shuttle20": 12.0,
+      "vo2max": 29.0,
+      "relGrip": 38.0,
+      "crossSitup": 12.0,
+      "sitReach": 15.7,
+      "run10x4": 16.8,
+      "reaction": 0.434,
+      "longJump": 107.0,
+      "airTime": 0.366
+     }
+    }
+   }
+  },
+  "3": {
+   "M": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 41.0,
+      "vo2max": 42.0,
+      "relGrip": 51.8,
+      "crossSitup": 42.0,
+      "sitReach": 6.1
+     },
+     "25~29": {
+      "shuttle20": 34.0,
+      "vo2max": 39.6,
+      "relGrip": 51.6,
+      "crossSitup": 38.0,
+      "sitReach": 5.3
+     },
+     "30~34": {
+      "shuttle20": 31.0,
+      "vo2max": 38.2,
+      "relGrip": 51.8,
+      "crossSitup": 35.0,
+      "sitReach": 4.6
+     },
+     "35~39": {
+      "shuttle20": 28.0,
+      "vo2max": 37.2,
+      "relGrip": 51.1,
+      "crossSitup": 33.0,
+      "sitReach": 4.6
+     },
+     "40~44": {
+      "shuttle20": 27.0,
+      "vo2max": 36.6,
+      "relGrip": 51.6,
+      "crossSitup": 32.0,
+      "sitReach": 4.8
+     },
+     "45~49": {
+      "shuttle20": 24.0,
+      "vo2max": 36.0,
+      "relGrip": 51.4,
+      "crossSitup": 30.0,
+      "sitReach": 4.6
+     },
+     "50~54": {
+      "shuttle20": 21.0,
+      "vo2max": 35.0,
+      "relGrip": 50.1,
+      "crossSitup": 26.0,
+      "sitReach": 4.7
+     },
+     "55~59": {
+      "shuttle20": 18.0,
+      "vo2max": 34.1,
+      "relGrip": 49.0,
+      "crossSitup": 23.0,
+      "sitReach": 3.9
+     },
+     "60~64": {
+      "shuttle20": 15.0,
+      "vo2max": 33.2,
+      "relGrip": 46.6,
+      "crossSitup": 19.0,
+      "sitReach": 2.3
+     }
+    },
+    "bodyComposition": {
+     "bmi": {
+      "min": 18.5,
+      "max": 25.0,
+      "minInclusive": true,
+      "maxInclusive": false,
+      "text": "18.5이상 25미만"
+     },
+     "bodyFat": {
+      "min": 7.0,
+      "max": 27.0,
+      "minInclusive": false,
+      "maxInclusive": false,
+      "text": "7%초과 27%미만"
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "19~24": {
+      "shuttle20": 19.0,
+      "vo2max": 32.8,
+      "relGrip": 38.0,
+      "crossSitup": 23.0,
+      "sitReach": 10.1
+     },
+     "25~29": {
+      "shuttle20": 17.0,
+      "vo2max": 32.2,
+      "relGrip": 38.2,
+      "crossSitup": 21.0,
+      "sitReach": 9.1
+     },
+     "30~34": {
+      "shuttle20": 16.0,
+      "vo2max": 31.0,
+      "relGrip": 40.8,
+      "crossSitup": 19.0,
+      "sitReach": 9.4
+     },
+     "35~39": {
+      "shuttle20": 15.0,
+      "vo2max": 30.5,
+      "relGrip": 38.7,
+      "crossSitup": 19.0,
+      "sitReach": 10.1
+     },
+     "40~44": {
+      "shuttle20": 15.0,
+      "vo2max": 30.3,
+      "relGrip": 38.5,
+      "crossSitup": 19.0,
+      "sitReach": 10.4
+     },
+     "45~49": {
+      "shuttle20": 14.0,
+      "vo2max": 29.7,
+      "relGrip": 37.6,
+      "crossSitup": 16.0,
+      "sitReach": 10.7
+     },
+     "50~54": {
+      "shuttle20": 12.0,
+      "vo2max": 29.1,
+      "relGrip": 36.5,
+      "crossSitup": 13.0,
+      "sitReach": 11.7
+     },
+     "55~59": {
+      "shuttle20": 11.0,
+      "vo2max": 28.4,
+      "relGrip": 35.2,
+      "crossSitup": 9.0,
+      "sitReach": 11.9
+     },
+     "60~64": {
+      "shuttle20": 9.0,
+      "vo2max": 27.7,
+      "relGrip": 34.1,
+      "crossSitup": 7.0,
+      "sitReach": 11.8
+     }
+    },
+    "bodyComposition": {
+     "bmi": {
+      "min": 18.5,
+      "max": 25.0,
+      "minInclusive": true,
+      "maxInclusive": false,
+      "text": "18.5이상 25미만"
+     },
+     "bodyFat": {
+      "min": 16.0,
+      "max": 37.0,
+      "minInclusive": false,
+      "maxInclusive": false,
+      "text": "16%초과 37%미만"
+     }
+    }
+   }
+  }
+ },
+ "senior": {
+  "1": {
+   "M": {
+    "byAge": {
+     "65~69": {
+      "step2min": 122.0,
+      "walk6min": 677.0,
+      "relGrip": 55.3,
+      "chairStand": 25.0,
+      "sitReach": 11.4,
+      "tug3m": 5.3,
+      "fig8": 21.0
+     },
+     "70~74": {
+      "step2min": 116.0,
+      "walk6min": 644.0,
+      "relGrip": 53.6,
+      "chairStand": 22.0,
+      "sitReach": 9.2,
+      "tug3m": 5.6,
+      "fig8": 22.5
+     },
+     "75~79": {
+      "step2min": 112.0,
+      "walk6min": 627.0,
+      "relGrip": 50.6,
+      "chairStand": 20.0,
+      "sitReach": 7.5,
+      "tug3m": 6.1,
+      "fig8": 24.0
+     },
+     "80~84": {
+      "step2min": 105.0,
+      "walk6min": 555.0,
+      "relGrip": 47.5,
+      "chairStand": 18.0,
+      "sitReach": 5.3,
+      "tug3m": 6.9,
+      "fig8": 26.3
+     },
+     "85이상": {
+      "step2min": 94.0,
+      "walk6min": 489.0,
+      "relGrip": 45.4,
+      "chairStand": 16.0,
+      "sitReach": 3.7,
+      "tug3m": 7.5,
+      "fig8": 28.5
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "65~69": {
+      "step2min": 117.0,
+      "walk6min": 622.0,
+      "relGrip": 40.6,
+      "chairStand": 22.0,
+      "sitReach": 19.1,
+      "tug3m": 5.6,
+      "fig8": 22.1
+     },
+     "70~74": {
+      "step2min": 111.0,
+      "walk6min": 578.0,
+      "relGrip": 38.4,
+      "chairStand": 20.0,
+      "sitReach": 17.3,
+      "tug3m": 6.1,
+      "fig8": 24.2
+     },
+     "75~79": {
+      "step2min": 103.0,
+      "walk6min": 537.0,
+      "relGrip": 36.2,
+      "chairStand": 18.0,
+      "sitReach": 15.2,
+      "tug3m": 6.8,
+      "fig8": 26.7
+     },
+     "80~84": {
+      "step2min": 93.0,
+      "walk6min": 474.0,
+      "relGrip": 34.4,
+      "chairStand": 15.0,
+      "sitReach": 13.1,
+      "tug3m": 7.6,
+      "fig8": 28.9
+     },
+     "85이상": {
+      "step2min": 76.0,
+      "walk6min": 415.0,
+      "relGrip": 32.7,
+      "chairStand": 14.0,
+      "sitReach": 10.8,
+      "tug3m": 8.6,
+      "fig8": 30.8
+     }
+    }
+   }
+  },
+  "2": {
+   "M": {
+    "byAge": {
+     "65~69": {
+      "step2min": 109.0,
+      "walk6min": 631.0,
+      "relGrip": 50.1,
+      "chairStand": 21.0,
+      "sitReach": 6.6,
+      "tug3m": 6.0,
+      "fig8": 23.9
+     },
+     "70~74": {
+      "step2min": 103.0,
+      "walk6min": 599.0,
+      "relGrip": 48.3,
+      "chairStand": 19.0,
+      "sitReach": 4.4,
+      "tug3m": 6.4,
+      "fig8": 25.6
+     },
+     "75~79": {
+      "step2min": 97.0,
+      "walk6min": 577.0,
+      "relGrip": 45.2,
+      "chairStand": 17.0,
+      "sitReach": 2.7,
+      "tug3m": 7.0,
+      "fig8": 27.8
+     },
+     "80~84": {
+      "step2min": 89.0,
+      "walk6min": 506.0,
+      "relGrip": 42.0,
+      "chairStand": 15.0,
+      "sitReach": 0.4,
+      "tug3m": 7.9,
+      "fig8": 30.8
+     },
+     "85이상": {
+      "step2min": 77.0,
+      "walk6min": 431.0,
+      "relGrip": 39.6,
+      "chairStand": 13.0,
+      "sitReach": -1.2,
+      "tug3m": 8.6,
+      "fig8": 33.6
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "65~69": {
+      "step2min": 104.0,
+      "walk6min": 574.0,
+      "relGrip": 36.4,
+      "chairStand": 19.0,
+      "sitReach": 15.2,
+      "tug3m": 6.3,
+      "fig8": 24.9
+     },
+     "70~74": {
+      "step2min": 97.0,
+      "walk6min": 532.0,
+      "relGrip": 34.1,
+      "chairStand": 17.0,
+      "sitReach": 13.3,
+      "tug3m": 7.0,
+      "fig8": 27.9
+     },
+     "75~79": {
+      "step2min": 87.0,
+      "walk6min": 480.0,
+      "relGrip": 31.8,
+      "chairStand": 15.0,
+      "sitReach": 11.2,
+      "tug3m": 7.8,
+      "fig8": 31.1
+     },
+     "80~84": {
+      "step2min": 75.0,
+      "walk6min": 410.0,
+      "relGrip": 29.9,
+      "chairStand": 13.0,
+      "sitReach": 9.0,
+      "tug3m": 8.7,
+      "fig8": 34.1
+     },
+     "85이상": {
+      "step2min": 58.0,
+      "walk6min": 362.0,
+      "relGrip": 27.9,
+      "chairStand": 11.0,
+      "sitReach": 6.5,
+      "tug3m": 9.8,
+      "fig8": 36.7
+     }
+    }
+   }
+  },
+  "3": {
+   "M": {
+    "byAge": {
+     "65~69": {
+      "step2min": 97.0,
+      "walk6min": 585.0,
+      "relGrip": 44.9,
+      "chairStand": 17.0,
+      "sitReach": 1.8,
+      "tug3m": 6.7,
+      "fig8": 26.8
+     },
+     "70~74": {
+      "step2min": 90.0,
+      "walk6min": 555.0,
+      "relGrip": 43.1,
+      "chairStand": 15.0,
+      "sitReach": -0.4,
+      "tug3m": 7.2,
+      "fig8": 28.7
+     },
+     "75~79": {
+      "step2min": 83.0,
+      "walk6min": 526.0,
+      "relGrip": 39.8,
+      "chairStand": 14.0,
+      "sitReach": -2.1,
+      "tug3m": 7.9,
+      "fig8": 31.6
+     },
+     "80~84": {
+      "step2min": 73.0,
+      "walk6min": 457.0,
+      "relGrip": 36.5,
+      "chairStand": 11.0,
+      "sitReach": -4.5,
+      "tug3m": 8.9,
+      "fig8": 35.3
+     },
+     "85이상": {
+      "step2min": 59.0,
+      "walk6min": 374.0,
+      "relGrip": 33.8,
+      "chairStand": 10.0,
+      "sitReach": -6.1,
+      "tug3m": 9.7,
+      "fig8": 38.7
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "65~69": {
+      "step2min": 90.0,
+      "walk6min": 527.0,
+      "relGrip": 32.2,
+      "chairStand": 16.0,
+      "sitReach": 11.3,
+      "tug3m": 7.0,
+      "fig8": 27.7
+     },
+     "70~74": {
+      "step2min": 82.0,
+      "walk6min": 485.0,
+      "relGrip": 29.8,
+      "chairStand": 14.0,
+      "sitReach": 9.3,
+      "tug3m": 7.9,
+      "fig8": 31.6
+     },
+     "75~79": {
+      "step2min": 71.0,
+      "walk6min": 424.0,
+      "relGrip": 27.4,
+      "chairStand": 12.0,
+      "sitReach": 7.2,
+      "tug3m": 8.8,
+      "fig8": 35.5
+     },
+     "80~84": {
+      "step2min": 57.0,
+      "walk6min": 346.0,
+      "relGrip": 25.4,
+      "chairStand": 10.0,
+      "sitReach": 4.9,
+      "tug3m": 9.8,
+      "fig8": 39.3
+     },
+     "85이상": {
+      "step2min": 41.0,
+      "walk6min": 309.0,
+      "relGrip": 23.1,
+      "chairStand": 9.0,
+      "sitReach": 2.2,
+      "tug3m": 11.0,
+      "fig8": 42.6
+     }
+    }
+   }
+  },
+  "4": {
+   "M": {
+    "byAge": {
+     "65~69": {
+      "absGrip": 30.3,
+      "chairStand": 17.0,
+      "fig8": 26.8
+     },
+     "70~74": {
+      "absGrip": 28.6,
+      "chairStand": 15.0,
+      "fig8": 28.7
+     },
+     "75~79": {
+      "absGrip": 26.4,
+      "chairStand": 14.0,
+      "fig8": 31.6
+     },
+     "80~84": {
+      "absGrip": 23.7,
+      "chairStand": 11.0,
+      "fig8": 35.3
+     },
+     "85이상": {
+      "absGrip": 20.6,
+      "chairStand": 10.0,
+      "fig8": 38.7
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "65~69": {
+      "absGrip": 18.8,
+      "chairStand": 16.0,
+      "fig8": 27.7
+     },
+     "70~74": {
+      "absGrip": 17.6,
+      "chairStand": 14.0,
+      "fig8": 31.6
+     },
+     "75~79": {
+      "absGrip": 15.6,
+      "chairStand": 12.0,
+      "fig8": 35.5
+     },
+     "80~84": {
+      "absGrip": 13.2,
+      "chairStand": 10.0,
+      "fig8": 39.3
+     },
+     "85이상": {
+      "absGrip": 11.0,
+      "chairStand": 9.0,
+      "fig8": 42.6
+     }
+    }
+   }
+  },
+  "5": {
+   "M": {
+    "byAge": {
+     "65~69": {
+      "absGrip": 30.3,
+      "chairStand": 17.0,
+      "fig8": 26.8
+     },
+     "70~74": {
+      "absGrip": 28.6,
+      "chairStand": 15.0,
+      "fig8": 28.7
+     },
+     "75~79": {
+      "absGrip": 26.4,
+      "chairStand": 14.0,
+      "fig8": 31.6
+     },
+     "80~84": {
+      "absGrip": 23.7,
+      "chairStand": 11.0,
+      "fig8": 35.3
+     },
+     "85이상": {
+      "absGrip": 20.6,
+      "chairStand": 10.0,
+      "fig8": 38.7
+     }
+    }
+   },
+   "F": {
+    "byAge": {
+     "65~69": {
+      "absGrip": 18.8,
+      "chairStand": 16.0,
+      "fig8": 27.7
+     },
+     "70~74": {
+      "absGrip": 17.6,
+      "chairStand": 14.0,
+      "fig8": 31.6
+     },
+     "75~79": {
+      "absGrip": 15.6,
+      "chairStand": 12.0,
+      "fig8": 35.5
+     },
+     "80~84": {
+      "absGrip": 13.2,
+      "chairStand": 10.0,
+      "fig8": 39.3
+     },
+     "85이상": {
+      "absGrip": 11.0,
+      "chairStand": 9.0,
+      "fig8": 42.6
+     }
+    }
+   }
+  }
+ }
+}
