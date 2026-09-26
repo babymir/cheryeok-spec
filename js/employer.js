@@ -96,8 +96,8 @@
     var validation = v && v.stats ? h("li", null, "검증: 측정결과 API의 실제 인증등급과 이 서비스의 계산을 비교 — " +
       Object.keys(v.stats).map(function (g) {
         var x = v.stats[g];
-        return g + " " + x.total.toLocaleString() + "건 중 " + pct(x.exact / x.total) + " 일치";
-      }).join(", ") + " (" + v.checkedAt + " 확인)") : null;
+        return g + " " + x.total.toLocaleString() + "건 중 등급 " + pct(x.exact / x.total) + " 일치(3등급 이상 여부 " + pct(x.sameBand / x.total) + ")";
+      }).join(", ") + " (" + v.checkedAt + " 확인). 어르신 불일치는 4~6등급 구분에서만 생기며 대부분 85세 이상입니다.") : null;
 
     mount($("about"),
       h("h3", { class: "sub" }, "국민체육진흥공단 공공데이터 (공공데이터포털)"),

@@ -1,11 +1,16 @@
 {
  "checkedAt": "2026-09-26",
- "files": 53,
+ "files": 293,
  "stats": {
   "성인": {
-   "total": 40390,
-   "exact": 40390,
-   "sameBand": 40390
+   "total": 199072,
+   "exact": 199047,
+   "sameBand": 199072
+  },
+  "어르신": {
+   "total": 56693,
+   "exact": 55841,
+   "sameBand": 56689
   }
  }
 }
