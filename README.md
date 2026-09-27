@@ -33,7 +33,7 @@ service/
 
 ## 데이터 다시 만들기 (순서대로)
 ```bash
-cd service
+cd service   # 이 저장소 폴더로 이동
 python3 scripts/build_criteria.py          # 등급 기준값
 python3 scripts/collect_videos_centers.py  # 영상·센터 (1분)
 python3 scripts/collect_measurements.py    # 측정결과 약 29만 건 (1시간 안팎, 중단돼도 이어받기)
@@ -46,7 +46,7 @@ CSS·JS 를 고치면 `index.html` 의 `?v=` 값을 바꿔야 방문자 브라�
 
 ## 내 컴퓨터에서 보기
 ```bash
-cd service
+cd service   # 이 저장소 폴더로 이동
 python3 -m http.server 8765
 # 브라우저에서 http://localhost:8765 열기
 ```
