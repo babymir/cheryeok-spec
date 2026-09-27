@@ -131,10 +131,11 @@
         h("span", { class: "posting-cat" }, [j.category, j.region].filter(Boolean).join(" · "))),
       h("b", { class: "posting-role" }, j.org + " " + j.role),
       h("dl", { class: "posting-facts" },
-        h("dt", null, "요구 등급"), h("dd", null, j.gradeText || "공고 확인", j.use ? h("small", null, " (" + j.use + ")") : null),
+        h("dt", null, "요구 등급"), h("dd", null, j.gradeText || "공고 확인", j.use ? h("small", null, " · " + j.use) : null),
         h("dt", null, "인증서"), h("dd", null, validText(j)),
         h("dt", null, "접수"), h("dd", null, period, j.certDue ? h("small", null, " · 인증서 제출 " + fmt(parseDate(j.certDue)) + "까지") : null)),
-      check && check.key !== "ok" ? h("p", { class: "posting-note" }, check.detail) : null,
+      // '등급 부족'의 설명은 요구 등급 줄과 같아서 되풀이하지 않는다
+      check && check.key !== "ok" && check.key !== "grade" ? h("p", { class: "posting-note" }, check.detail) : null,
       j.note ? h("p", { class: "posting-note" }, j.note) : null,
       h("div", { class: "posting-actions" },
         s.key !== "closed" && j.maxGrade ? h("button", { type: "button", class: "small-btn", onclick: function () { onPrepare(j.id); } }, "이 공고로 준비하기") : null,
