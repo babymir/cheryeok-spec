@@ -39,9 +39,12 @@ function toInput(r) {
 }
 
 // 목표 4등급: 성인은 심폐·근력, 어르신은 8자보행·근기능(상지 또는 하지)
+// 기록이 비어 있어 '모자람'으로 잡힌 항목(value null)은 탈락 이유로 세지 않는다 (신체조성은 값이 없어도 범위 밖 판정이라 센다)
 function reasonsFor(result, target) {
   if (target <= 3) {
-    return engine.gaps(result, target).map((g) => (g.oneOf ? "민첩성·순발력(둘 중 하나)" : g.label));
+    return engine.gaps(result, target)
+      .filter((g) => g.value !== null || g.factor === "body")
+      .map((g) => (g.oneOf ? "민첩성·순발력(둘 중 하나)" : g.label));
   }
   const f = result.factors;
   if (result.group === "adult") {
@@ -95,8 +98,9 @@ function main() {
         }
         const bucket = ((reasons[t] = reasons[t] || {})[result.group] = reasons[t][result.group] || { n: 0, single: 0, counts: {} });
         const list = reasonsFor(result, t);
+        const hasBlank = t <= 3 && engine.gaps(result, t).some((g) => g.value === null && g.factor !== "body");
         bucket.n++;
-        if (list.length === 1) bucket.single++;
+        if (list.length === 1 && !hasBlank) bucket.single++;
         for (const label of list) bucket.counts[label] = (bucket.counts[label] || 0) + 1;
       }
     }

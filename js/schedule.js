@@ -68,7 +68,8 @@
   }
 
   /**
-   * plan({ deadline: Date, validMonths: number|null, today: Date })
+   * plan({ deadline: Date, validMonths: number|null, validFrom: Date|null, today: Date })
+   *   validFrom 을 주면 validMonths 대신 쓴다 (예: "2026.7.8 이후 측정분만 인정" 같은 공고)
    * 반환: { ok, message, windowStart, windowEnd, rounds, trainingDays }
    */
   function plan(opts) {
@@ -77,7 +78,7 @@
     if (isNaN(deadline.getTime())) return { ok: false, message: "마감일(기준일)을 입력해 주세요." };
 
     var lastMeasure = addDays(deadline, -SAFETY_DAYS);
-    var validFrom = opts.validMonths ? addMonths(deadline, -opts.validMonths) : null;
+    var validFrom = opts.validFrom ? atMidnight(opts.validFrom) : opts.validMonths ? addMonths(deadline, -opts.validMonths) : null;
     var windowStart = addDays(today, 1);
     if (validFrom && validFrom > windowStart) windowStart = validFrom;
 

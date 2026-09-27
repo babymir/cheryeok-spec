@@ -1,6 +1,6 @@
 {
  "period": "2025.6 ~ 2026.9",
- "builtAt": "2026-09-26",
+ "builtAt": "2026-09-27",
  "minBandN": 200,
  "overall": {
   "n": 255765,
@@ -365,57 +365,57 @@
   "1": {
    "adult": {
     "n": 183801,
-    "single": 25692,
+    "single": 25622,
     "top": [
      {
       "label": "유연성",
-      "count": 138116
+      "count": 125018
      },
      {
       "label": "근지구력",
-      "count": 136503
+      "count": 123166
      },
      {
       "label": "심폐지구력",
-      "count": 107045
-     },
-     {
-      "label": "민첩성·순발력(둘 중 하나)",
-      "count": 101260
+      "count": 105349
      },
      {
       "label": "근력",
-      "count": 97147
+      "count": 97084
+     },
+     {
+      "label": "민첩성·순발력(둘 중 하나)",
+      "count": 86901
      }
     ]
    },
    "senior": {
     "n": 49027,
-    "single": 9662,
+    "single": 9653,
     "top": [
      {
       "label": "유연성",
-      "count": 37856
-     },
-     {
-      "label": "심폐지구력",
-      "count": 33020
-     },
-     {
-      "label": "하지근기능",
-      "count": 25066
+      "count": 27992
      },
      {
       "label": "협응력",
-      "count": 24939
+      "count": 24929
      },
      {
-      "label": "평형성",
-      "count": 23569
+      "label": "심폐지구력",
+      "count": 22939
      },
      {
       "label": "상지근기능",
-      "count": 21749
+      "count": 21726
+     },
+     {
+      "label": "하지근기능",
+      "count": 17235
+     },
+     {
+      "label": "평형성",
+      "count": 14017
      }
     ]
    }
@@ -423,57 +423,57 @@
   "2": {
    "adult": {
     "n": 150076,
-    "single": 44294,
+    "single": 44079,
     "top": [
      {
       "label": "근지구력",
-      "count": 96483
+      "count": 83146
      },
      {
       "label": "유연성",
-      "count": 94657
+      "count": 81559
      },
      {
       "label": "심폐지구력",
-      "count": 69800
+      "count": 68104
      },
      {
       "label": "근력",
-      "count": 58994
+      "count": 58931
      },
      {
       "label": "민첩성·순발력(둘 중 하나)",
-      "count": 52823
+      "count": 38464
      }
     ]
    },
    "senior": {
     "n": 35725,
-    "single": 11784,
+    "single": 11752,
     "top": [
      {
       "label": "유연성",
-      "count": 26175
-     },
-     {
-      "label": "심폐지구력",
-      "count": 20059
-     },
-     {
-      "label": "하지근기능",
-      "count": 17011
-     },
-     {
-      "label": "평형성",
-      "count": 15904
+      "count": 16311
      },
      {
       "label": "협응력",
-      "count": 12759
+      "count": 12749
      },
      {
       "label": "상지근기능",
-      "count": 10867
+      "count": 10844
+     },
+     {
+      "label": "심폐지구력",
+      "count": 9978
+     },
+     {
+      "label": "하지근기능",
+      "count": 9180
+     },
+     {
+      "label": "평형성",
+      "count": 6352
      }
     ]
    }
@@ -481,19 +481,19 @@
   "3": {
    "adult": {
     "n": 99811,
-    "single": 34521,
+    "single": 33940,
     "top": [
      {
       "label": "근지구력",
-      "count": 57224
+      "count": 43887
      },
      {
       "label": "유연성",
-      "count": 56198
+      "count": 43100
      },
      {
       "label": "심폐지구력",
-      "count": 39880
+      "count": 38184
      },
      {
       "label": "신체조성(BMI 또는 체지방률)",
@@ -501,37 +501,37 @@
      },
      {
       "label": "근력",
-      "count": 31568
+      "count": 31505
      }
     ]
    },
    "senior": {
     "n": 22363,
-    "single": 6396,
+    "single": 6331,
     "top": [
      {
       "label": "유연성",
-      "count": 17389
-     },
-     {
-      "label": "심폐지구력",
-      "count": 13680
-     },
-     {
-      "label": "평형성",
-      "count": 12927
-     },
-     {
-      "label": "하지근기능",
-      "count": 11689
+      "count": 7525
      },
      {
       "label": "협응력",
-      "count": 7487
+      "count": 7477
      },
      {
       "label": "상지근기능",
-      "count": 4326
+      "count": 4303
+     },
+     {
+      "label": "하지근기능",
+      "count": 3858
+     },
+     {
+      "label": "심폐지구력",
+      "count": 3599
+     },
+     {
+      "label": "평형성",
+      "count": 3375
      }
     ]
    }

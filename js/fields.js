@@ -42,11 +42,15 @@
   // 같은 체력요인 영상 중 먼저 보여 줄 운동 부위 (동영상 API 의 trng_mscl_part)
   var VIDEO_PREFER = {
     endurance: ["복부"],
+    flexibility: ["뒤쪽 넓적다리", "척추", "엉덩이"],
     strength: ["아래팔", "위팔", "등"],
     upper: ["아래팔", "위팔", "등"],
     lower: ["넓적다리", "엉덩이", "종아리"],
     power: ["넓적다리", "엉덩이", "종아리"]
   };
+
+  // 집에서 할 수 있는 영상의 도구 (동영상 API 의 tool 값). 이 밖의 도구나 헬스장 영상은 뒤로 미룬다
+  var HOME_TOOLS = ["", "매트", "의자", "수건", "베개", "소파", "물병", "계단", "테이블", "밴드"];
 
   // 화면 확인용 예시 기록 (27세 남성, 3등급 근처)
   var SAMPLE = {
@@ -54,5 +58,5 @@
     gripLeft: 38.5, gripRight: 40.2, shuttle20: 36, crossSitup: 34, sitReach: 9.5, longJump: 212, run10x4: 11.2
   };
 
-  root.Fields = { ADULT_FIELDS: ADULT_FIELDS, SENIOR_FIELDS: SENIOR_FIELDS, VIDEO_FACTORS: VIDEO_FACTORS, VIDEO_PREFER: VIDEO_PREFER, SAMPLE: SAMPLE };
+  root.Fields = { ADULT_FIELDS: ADULT_FIELDS, SENIOR_FIELDS: SENIOR_FIELDS, VIDEO_FACTORS: VIDEO_FACTORS, VIDEO_PREFER: VIDEO_PREFER, HOME_TOOLS: HOME_TOOLS, SAMPLE: SAMPLE };
 })(this);
