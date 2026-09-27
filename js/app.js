@@ -178,7 +178,7 @@
     var status = J.statusOf(job, new Date());
     mount($("job-hint"),
       h("b", null, status.label), " · " + job.gradeText + (job.use ? " (" + job.use + ")" : "") + " · 인증서: " + window.Jobs.validText(job) +
-      (job.maxGrade > 4 ? " · 등급과 관계없이 인증서만 있으면 되는 공고입니다" : "") + " · ", link(job.source, "공고 원문"));
+      (job.maxGrade > 4 ? " · 합격선이 아니라 점수·가점으로 반영하는 공고라 등급이 높을수록 유리합니다" : "") + " · ", link(job.source, "공고 원문"));
     rerunIfShown();
   }
 
